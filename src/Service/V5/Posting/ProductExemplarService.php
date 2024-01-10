@@ -8,7 +8,7 @@ use Gam6itko\OzonSeller\Service\AbstractService;
 
 class ProductExemplarService extends AbstractService
 {
-    private $path = '/v5/fbs/posting/product/exemplar/';
+    private $path = '/v5/fbs/posting/product/exemplar';
 
     /**
      * @see https://docs.ozon.ru/api/seller/#operation/PostingAPI_FbsPostingProductExemplarSet
