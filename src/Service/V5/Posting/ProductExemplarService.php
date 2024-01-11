@@ -24,4 +24,16 @@ class ProductExemplarService extends AbstractService
 
         return $this->request('POST', "{$this->path}/set", $body);
     }
+
+    /**
+     * @see https://docs.ozon.ru/api/seller/#operation/PostingAPI_FbsPostingProductExemplarCreateOrGet
+     */
+    public function createOrGet(string $postingNumber)
+    {
+        $body = [
+            'posting_number' => $postingNumber,
+        ];
+
+        return $this->request('POST', "{$this->path}/create-or-get", $body);
+    }
 }
